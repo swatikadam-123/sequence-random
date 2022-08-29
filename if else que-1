@@ -1,0 +1,35 @@
+A=$((100+RANDOM%900))
+B=$((100+RANDOM%900))
+C=$((100+RANDOM%900))
+D=$((100+RANDOM%900))
+E=$((100+RANDOM%900))
+echo "Five Random Three Digit Values "
+echo " "
+echo "Maximum "
+if (( A>B && A>C && A>D && A>E ))
+then
+      echo "Maximum Number is A :"$A
+else
+      echo "A :"$A
+fi
+
+if (( B>A && B>C && B>D && B>E ))
+then
+      echo "Maximum Number is B :" $B
+else
+      echo "B :"$B
+fi
+
+if (( C>A && C>B && C>D && C>E ))
+then
+      echo "Maximum value is  "$C
+else
+      echo "C :"$C
+fi
+
+if (( D>A && D>B && D>C && D>E ))
+then
+      echo "Maximum value is  " $D
+else
+      echo "D :"$D
+fi
